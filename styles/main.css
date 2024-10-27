@@ -76,6 +76,23 @@ body > canvas {
   transform-style: preserve-3d;
 }
 
+/* 为移动设备调整样式 */
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+    height: 50vw;
+    box-shadow: 0 2vw 3vw rgba(0, 0, 0, .15);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90vw;
+    height: 60vw;
+    box-shadow: 0 2vw 4vw rgba(0, 0, 0, .1);
+  }
+}
+
 .card.reversal {
   transform: rotateY(180deg);
 }
